@@ -1,4 +1,4 @@
-# 🚀 Project Name
+## 🚀 Project Name
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
