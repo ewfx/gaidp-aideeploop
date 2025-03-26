@@ -1,85 +1,80 @@
-​The Python project utilizes Streamlit, LangChain, and Pandas to automate the creation of data profiling rules, thereby enhancing data governance and anomaly detection. By integrating Generative AI, the application streamlines data management processes through AI-driven rule generation and intelligent transaction flagging.​
+Solution Overview
 
-Key Components:
+This solution leverages Generative AI and unsupervised machine learning to automate data profiling for regulatory reporting in banking, reducing manual effort while improving accuracy and compliance.
 
-User Interface with Streamlit:
+Key Components
 
-Facilitates user-friendly interactions, allowing users to upload regulatory documents (PDFs) and datasets (CSV files).​
-Medium
+Regulatory Instruction Parser
+Automated Rule Generator
+Adaptive Risk Scoring Engine
+Remediation Action Advisor
+Continuous Learning Module
 
-Displays data previews and generated profiling rules.​
 
-Data Handling with Pandas:
 
-Processes and manages datasets efficiently.​
-Streamlit
-+1
-Medium
-+1
+Deployment Workflow
 
-Performs data profiling and anomaly detection tasks.​
-LinkedIn
-+6
-Medium
-+6
-GitHub
-+6
+//TODO - define how system works - deployment steps here
 
-Generative AI Integration via LangChain:
+Initial Setup
+Load regulatory documents
+Connect to bank data sources
+Initialize models
+Daily Operation
+Parse new/updated regulations
+Generate/update profiling rules
+Apply rules to incoming data
+Calculate risk scores
+Suggest remediations for violations
+Incorporate user feedback
+Continuous Improvement
 
-Employs LangChain to interface with language models for generating data profiling rules based on regulatory documents.​
+Benefits
 
-Enhances anomaly detection by leveraging AI capabilities.​
+Efficiency: Reduces manual rule definition 
+Accuracy: Uncovers hidden data patterns through ML
+Adaptability: Quickly adjusts to regulatory changes
+Risk Management: Proactively identifies high-risk areas
+Continuous Learning: Improves over time with feedback
+//tod add more
 
-Workflow:
 
-Document and Data Upload:
+This solution represents a significant advancement over traditional manual approaches to regulatory data profiling, combining the pattern recognition capabilities of unsupervised ML with the contextual understanding of LLMs to create a more robust, adaptive compliance system.
 
-Users upload a regulatory document and a dataset through the Streamlit interface.​
 
-Text Extraction and Rule Generation:
 
-The application extracts text from the uploaded PDF.​
+Run manual
 
-Utilizes LangChain to generate data profiling rules from the extracted text.​
-Streamlit
 
-Anomaly Detection:
+Run the main script:
+Right-click on main.py in the Project view
+Select "Run 'main'"
+View the output in the Run console at the bottom
+Additional Configuration Tips
 
-Applies the generated rules to the dataset to identify anomalies.​
+Handling LLM Models:
+For the LLM components, you'll need to either:
+Use a local model (like downloading from HuggingFace)
+Connect to an API (like OpenAI)
 
-Results Display:
+Environment Variables:
+Store sensitive information like API keys in environment variables
+Create a .env file in your project root:
 
-Presents the generated rules and detected anomalies to the user within the Streamlit app.​
+OPENAI_API_KEY=your_api_key_here
 
-Prerequisites:
 
-Python environment with necessary packages installed:​
+Sample Test Data
 
-streamlit​
-Streamlit
-+14
-Welcome to Kanaries Docs – Kanaries
-+14
-digilab.co.uk
-+14
+Create a sample PDF (or use an existing regulatory document) and place it in your project folder to test the parser component.
+For testing the rule generator, you can create a sample CSV file or use the DataFrame example provided in the main.py file.
 
-pandas​
+//TODO
 
-langchain​
+Troubleshooting
 
-PyPDF2​
+//TODO
 
-scikit-learn​
-
-python-dotenv​
-
-API keys for the language model used by LangChain (e.g., OpenAI API key).​
-Streamlit
-+3
-Streamlit
-+3
-Streamlit
-+3
-
-This integration of Streamlit, LangChain, and Pandas offers an efficient solution for automating data profiling and anomaly detection, leveraging Generative AI to enhance data governance processes.
+// TODO - indentation 
+// TODO - documentation 
+// TODO - references etc..
