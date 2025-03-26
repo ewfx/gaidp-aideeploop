@@ -1,59 +1,85 @@
-## 🚀 Project Name
+​The Python project utilizes Streamlit, LangChain, and Pandas to automate the creation of data profiling rules, thereby enhancing data governance and anomaly detection. By integrating Generative AI, the application streamlines data management processes through AI-driven rule generation and intelligent transaction flagging.​
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+Key Components:
 
----
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+User Interface with Streamlit:
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+Facilitates user-friendly interactions, allowing users to upload regulatory documents (PDFs) and datasets (CSV files).​
+Medium
 
-![Screenshot 1](link-to-image)
+Displays data previews and generated profiling rules.​
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Data Handling with Pandas:
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+Processes and manages datasets efficiently.​
+Streamlit
++1
+Medium
++1
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Performs data profiling and anomaly detection tasks.​
+LinkedIn
++6
+Medium
++6
+GitHub
++6
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Generative AI Integration via LangChain:
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+Employs LangChain to interface with language models for generating data profiling rules based on regulatory documents.​
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular/test
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+Enhances anomaly detection by leveraging AI capabilities.​
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+Workflow:
+
+Document and Data Upload:
+
+Users upload a regulatory document and a dataset through the Streamlit interface.​
+
+Text Extraction and Rule Generation:
+
+The application extracts text from the uploaded PDF.​
+
+Utilizes LangChain to generate data profiling rules from the extracted text.​
+Streamlit
+
+Anomaly Detection:
+
+Applies the generated rules to the dataset to identify anomalies.​
+
+Results Display:
+
+Presents the generated rules and detected anomalies to the user within the Streamlit app.​
+
+Prerequisites:
+
+Python environment with necessary packages installed:​
+
+streamlit​
+Streamlit
++14
+Welcome to Kanaries Docs – Kanaries
++14
+digilab.co.uk
++14
+
+pandas​
+
+langchain​
+
+PyPDF2​
+
+scikit-learn​
+
+python-dotenv​
+
+API keys for the language model used by LangChain (e.g., OpenAI API key).​
+Streamlit
++3
+Streamlit
++3
+Streamlit
++3
+
+This integration of Streamlit, LangChain, and Pandas offers an efficient solution for automating data profiling and anomaly detection, leveraging Generative AI to enhance data governance processes.
